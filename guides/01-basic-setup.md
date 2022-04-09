@@ -2,9 +2,10 @@
 
 ## Installing dependencies
 
-``` 
+```
 npm i -D typescript jest ts-jest @types/jest
 ```
+
 ## Setting up typescript
 
 ```
@@ -18,7 +19,6 @@ use ts-jest as preset.
 
 https://jestjs.io/docs/getting-started#using-typescript-via-ts-jest
 
-
 ## Configure npm to run jest
 
 Add one npm script to run jest by adding:
@@ -28,4 +28,3 @@ Add one npm script to run jest by adding:
     "test": "jest"
   },
 ```
-
