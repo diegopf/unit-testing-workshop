@@ -1,0 +1,25 @@
+name: Run tests
+
+on:
+  push:
+
+jobs:
+  build:
+    name: Build project
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2.4.0
+
+      - name: Set up Node 16
+        uses: actions/setup-node@v2.5.1
+        with:
+          node-version: "16"
+          cache: "npm"
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Test
+        run: npm test
