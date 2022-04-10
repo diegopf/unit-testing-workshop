@@ -4,6 +4,6 @@ import App from "../App.vue";
 describe("App component", () => {
   it("Should render the app", () => {
     const wrapper = shallowMount(App);
-    expect(wrapper.text()).toContain("Unit testing!");
+    expect(wrapper.html()).toContain("<blog-stub></blog-stub>");
   });
 });
